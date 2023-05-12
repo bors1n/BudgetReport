@@ -1,0 +1,4 @@
+{
+  "secret_key": "here your secret key from notion",
+  "database_id": "here data base id"
+}
