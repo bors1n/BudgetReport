@@ -1,5 +1,7 @@
+import json
+import requests
+
 import pandas as pd
-import json, requests
 
 #подключение к ноушен
 file = open('/Users/bors1n/DataspellProjects/dsProject/budget_report/api_key.json')
@@ -48,5 +50,3 @@ for i in range(len(db['results'])):
 all_data = pd.DataFrame(data_dict)
 all_data.to_csv('/Users/bors1n/DataspellProjects/dsProject/budget_report/all_data.csv')
 
-
-#%%
