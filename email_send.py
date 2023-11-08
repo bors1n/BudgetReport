@@ -25,8 +25,8 @@ msg['Subject'] = 'Budget Report'  # Тема сообщения
 
 body = f'Budget Report for {calendar.month_name[currentMonth - 1]}'
 msg.attach(MIMEText(body, 'plain'))  # Добавляем в сообщение текст
-
-pdfname = '/Users/bors1n/DataspellProjects/dsProject/budget_report/report.pdf'
+pdfname = '/home/admin/projects/budgeting_report/BudgetReport/report.pdf'
+#pdfname = '/Users/bors1n/DataspellProjects/dsProject/budget_report/report.pdf'
 # open the file in bynary
 binary_pdf = open(pdfname, 'rb')
 

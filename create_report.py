@@ -10,7 +10,8 @@ WIDTH = 210
 HEIGHT = 297
 
 # get data
-name_df = '/Users/bors1n/DataspellProjects/dsProject/budget_report/all_data.csv'
+#name_df = '/Users/bors1n/DataspellProjects/dsProject/budget_report/all_data.csv'
+name_df = '/home/admin/projects/budgeting_report/BudgetReport/all_data.csv'
 
 # get date
 today = datetime.date.today()
@@ -34,16 +35,20 @@ pdf.add_page()
 pdf.add_font('ArialUni', '', '/Library/Fonts/Arial Unicode.ttf', uni=True)
 
 # background
-pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My project-2.png', 0, 0, WIDTH)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My_project-2.png', 0, 0, WIDTH)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/My_project-2.png', 0, 0, WIDTH)
 
 # pai plot
-pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png', 92, 55, 115, 90)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
 
 # line plot
-pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/line_test.png', 2, 150, 130, 70)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png', 92, 55, 115, 90)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
 
 # bar plot
-pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/bar_test.png', 75, 220, 135, 70)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png', 92, 55, 115, 90)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
 
 # title and info
 pdf.set_font('Arial', '', 24)
@@ -88,8 +93,9 @@ pdf.write(4, f'{fourth_cost}')
 pdf.set_xy(x=2, y=256)
 pdf.write(4, f'{fifth_cost}')
 
-pdf.output('/Users/bors1n/DataspellProjects/dsProject/budget_report/report.pdf', 'F')
-print('Done')
+pdf.output('/home/admin/projects/budgeting_report/BudgetReport/report.pdf', 'F')
+#pdf.output('/Users/bors1n/DataspellProjects/dsProject/budget_report/report.pdf', 'F')
+#print('Done')
 
 
 #%%
