@@ -4,8 +4,8 @@ import requests
 import pandas as pd
 
 #подключение к ноушен
-#file = open('/Users/bors1n/DataspellProjects/dsProject/budget_report/api_key.json')
-file = open('/home/admin/projects/budgeting_report/BudgetReport/api_key.json')
+file = open('/Users/bors1n/DataspellProjects/dsProject/budget_report/api_key.json')
+#file = open('/home/admin/projects/budgeting_report/BudgetReport/api_key.json')
 data = json.load(file)
 #мой секретный токен
 secret = data['secret_key']
@@ -20,6 +20,8 @@ headers = {
 }
 
 url = f"https://api.notion.com/v1/databases/{database}/query"
+print(url)
+
 r = requests.post(url, headers=headers)
 
 db = r.json()
@@ -49,6 +51,6 @@ for i in range(len(db['results'])):
     data_dict['Description'].append(description)
 
 all_data = pd.DataFrame(data_dict)
-#all_data.to_csv('/Users/bors1n/DataspellProjects/dsProject/budget_report/all_data.csv')
-all_data.to_csv('/home/admin/projects/budgeting_report/BudgetReport/all_data.csv')
-
+all_data.to_csv('/Users/bors1n/DataspellProjects/dsProject/budget_report/all_data.csv')
+#all_data.to_csv('/home/admin/projects/budgeting_report/BudgetReport/all_data.csv')
+print('done')
