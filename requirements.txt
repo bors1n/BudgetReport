@@ -1,6 +1,6 @@
 certifi>=2017.4.17
 charset-normalizer~=2.0.0
-contourpy==1.2.0
+contourpy<=1.2.0
 cycler==0.12.1
 fonttools==4.44.0
 fpdf==1.7.2
