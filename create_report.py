@@ -33,8 +33,7 @@ pdf = FPDF()
 pdf.add_page()
 
 # add unicode font
-path = os.path.abspath('/home/admin/projects/budgeting_report/BudgetReport/res/fonts/ArialUnicode.ttf')
-pdf.add_font('ArialUni', '', path, uni=True)
+pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
 
 # background
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My_project-2.png', 0, 0, WIDTH)
@@ -53,11 +52,11 @@ pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png',
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
 
 # title and info
-pdf.set_font('Arial', '', 24)
+pdf.set_font('DejaVu', '', 24)
 pdf.ln(65)
 pdf.write(5, f'{calendar.month_name[currentMonth - 1]}.')
 pdf.ln(10)
-pdf.set_font('Arial', '', 14)
+pdf.set_font('DejaVu', '', 14)
 pdf.write(4, start_month_info)
 pdf.ln(7)
 pdf.write(4, month_expenses_info)
@@ -65,11 +64,11 @@ pdf.ln(7)
 pdf.write(4, leftover_info)
 
 #expenses by week
-pdf.set_font('Arial', '', 14)
+pdf.set_font('DejaVu', '', 14)
 pdf.set_xy(x=140, y=155)
 pdf.write(5, 'Expenses by week.')
 pdf.set_xy(x=140, y=162)
-pdf.set_font('Arial', '', 12)
+pdf.set_font('DejaVu', '', 12)
 pdf.write(5, f'{first_week}')
 pdf.set_xy(x=140, y=168)
 pdf.write(4, f'{second_week}')
@@ -81,10 +80,10 @@ pdf.write(4, f'{fourth_week}')
 
 #top five costs
 pdf.set_xy(x=2, y=225)
-pdf.set_font('ArialUni', '', 14)
+pdf.set_font('DejaVu', '', 14)
 pdf.write(5, 'Top five costs.')
 pdf.set_xy(x=2, y=232)
-pdf.set_font('ArialUni', '', 12)
+pdf.set_font('DejaVu', '', 12)
 pdf.write(4, f'{first_cost}')
 pdf.set_xy(x=2, y=238)
 pdf.write(4, f'{second_cost}')
