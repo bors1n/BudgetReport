@@ -1,6 +1,7 @@
 from fpdf import FPDF
 import datetime
 import calendar
+import os
 
 from functions import plot_pai_chart, get_month_data, \
                                     plot_bar_chart, plot_line_chart, \
@@ -32,7 +33,8 @@ pdf = FPDF()
 pdf.add_page()
 
 # add unicode font
-pdf.add_font('ArialUni', '', '/home/admin/projects/budgeting_report/BudgetReport/res/fonts/ArialUnicode.ttf', uni=True)
+path = os.path.abspath('/home/admin/projects/budgeting_report/BudgetReport/res/fonts/ArialUnicode.ttf')
+pdf.add_font('ArialUni', '', path, uni=True)
 
 # background
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My_project-2.png', 0, 0, WIDTH)
