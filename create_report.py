@@ -34,6 +34,7 @@ pdf.add_page()
 
 # add unicode font
 # pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
+pdf.set_doc_option('core_fonts_encoding', 'utf-8')
 
 # background
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My_project-2.png', 0, 0, WIDTH)
