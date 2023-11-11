@@ -45,12 +45,12 @@ pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png',
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
 
 # line plot
-pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png', 92, 55, 115, 90)
-#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/line_test.png', 2, 150, 130, 70)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 2, 150, 130, 70)
 
 # bar plot
-pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/pie_test.png', 92, 55, 115, 90)
-#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 92, 55, 115, 90)
+pdf.image('/home/admin/projects/budgeting_report/BudgetReport/res/bar_test.png', 75, 220, 135, 70)
+#pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/pie_test.png', 75, 220, 135, 70)
 
 # title and info
 pdf.set_font('RobotoSlab', '', 24)
