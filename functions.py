@@ -118,7 +118,8 @@ def plot_pai_chart(df, filename, size: tuple = (10, 8)):
     plt.figure(figsize=size)
     plt.pie(np.abs(top_six_expenses.Amount), labels=top_six_expenses.Category, autopct='%.0f%%', colors=palette_color)
     plt.title('Top 5 spending categories per month', fontsize=16)
-    plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    #plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    plt.savefig(f'/home/admin/projects/budgeting_report/BudgetReport/res/{filename}', dpi=200, bbox_inches='tight')
     plt.close()
 
 
@@ -137,7 +138,8 @@ def plot_bar_chart(df, filename, size: tuple = (10, 8)):
     ax.set_xlabel('')
     ax.set_ylabel('')
     show_values(ax, 'h', space=0.05)
-    plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    #plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    plt.savefig(f'/home/admin/projects/budgeting_report/BudgetReport/res/{filename}', dpi=200, bbox_inches='tight')
     plt.close()
 
 
@@ -162,7 +164,8 @@ def plot_line_chart(df, filename, size: tuple = (10, 8)):
     plt.title('Dynamics of the balance by day', fontsize=18)
     ax.set_xlabel('')
     ax.set_ylabel('')
-    plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    #plt.savefig(f'/Users/bors1n/DataspellProjects/dsProject/budget_report/res/{filename}', dpi=200, bbox_inches='tight')
+    plt.savefig(f'/home/admin/projects/budgeting_report/BudgetReport/res/{filename}', dpi=200, bbox_inches='tight')
     plt.close()
 
 

@@ -20,7 +20,6 @@ headers = {
 }
 
 url = f"https://api.notion.com/v1/databases/{database}/query"
-print(url)
 
 r = requests.post(url, headers=headers)
 
