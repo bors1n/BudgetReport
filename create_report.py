@@ -32,7 +32,7 @@ pdf = FPDF()
 pdf.add_page()
 
 # add unicode font
-pdf.add_font('ArialUni', '', '/home/admin/projects/budgeting_report/BudgetReport/res/fonts/Arial Unicode.ttf', uni=True)
+pdf.add_font('ArialUni', '', '/home/admin/projects/budgeting_report/BudgetReport/res/fonts/ArialUnicode.ttf', uni=True)
 
 # background
 #pdf.image('/Users/bors1n/DataspellProjects/dsProject/budget_report/res/My_project-2.png', 0, 0, WIDTH)
